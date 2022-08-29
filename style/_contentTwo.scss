@@ -1,0 +1,52 @@
+.content-two {
+  margin: 13rem auto;
+  @include flexCenter(center, space-between);
+  width: 110rem;
+  .img-two {
+    @include size(50rem, 40rem);
+  }
+  .content-box {
+    width: 38rem;
+    &-title {
+      font-size: 3.5rem;
+      font-weight: 500;
+      line-height: 5rem;
+      color: $title-color;
+    }
+    &-p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 3rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    &-span {
+      font-size: 1.4rem;
+      padding-left: 4rem;
+      font-weight: 400;
+      line-height: 3rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      &:before {
+        content: "";
+        @include size(24px, 24px);
+        border-radius: 50%;
+        background-color: #2fab73;
+        position: absolute;
+        top: 0.4rem;
+        left: 0;
+      }
+      &:after {
+        content: "";
+        @include size(6px, 10px);
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        transform: rotate(45deg);
+        border-bottom: 2px solid white;
+        border-right: 2px solid white;
+        border-radius: 2px;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import "variables.scss";
+
+* {
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  color: $text-color;
+  /* để ở trên thẻ * thì thẻ svg sẽ ko chỉnh màu đc */
+  font-size: 62.5%;
+  /* để ở trên thẻ * thì thẻ con của nó sẽ không thể inherit đc */
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}

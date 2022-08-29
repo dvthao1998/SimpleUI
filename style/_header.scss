@@ -1,0 +1,45 @@
+.nav {
+  @include flexCenter(center, space-around);
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  padding: 2rem;
+  background-color: white;
+  &-list {
+    @include flexCenter;
+    list-style: none;
+    &-item {
+      font-size: 1.6rem;
+      padding: 1rem 2rem;
+    }
+    li {
+      transition: all 0.25s linear;
+    }
+    a:hover li {
+      color: white;
+      background-color: $primary-color;
+      border-radius: 1rem;
+    }
+  }
+  &-login-btn {
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 3rem;
+    transition: 0.25s linear;
+    &:last-child {
+      color: $primary-color;
+      width: 6rem;
+      height: 2rem;
+      border: 1px solid $primary-color;
+    }
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+}
