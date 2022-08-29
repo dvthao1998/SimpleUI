@@ -47,6 +47,7 @@ a {
 }
 .nav-list li {
   transition: all 0.25s linear;
+  color: #4f5665;
 }
 .nav-list a:hover li {
   color: white;

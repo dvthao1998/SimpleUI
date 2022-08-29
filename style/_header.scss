@@ -17,6 +17,7 @@
     }
     li {
       transition: all 0.25s linear;
+      color: $text-color;
     }
     a:hover li {
       color: white;
