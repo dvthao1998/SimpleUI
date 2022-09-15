@@ -25,4 +25,20 @@
       border-left: 2px solid rgba($color: #000000, $alpha: 0.1);
     }
   }
+  @include mobile {
+    flex-direction: column;
+    height: auto;
+    margin-top: -1rem;
+    &-item {
+      justify-content: stretch;
+      margin-top: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      &:not(:first-child) {
+        border: none;
+        border-top: 2px solid rgba($color: #000000, $alpha: 0.1);
+      }
+    }
+  }
 }

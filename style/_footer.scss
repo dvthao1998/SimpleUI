@@ -37,6 +37,12 @@
     border-radius: 2rem;
     box-shadow: 2px 2rem 1rem rgba($color: $primary-color, $alpha: 0.2);
   }
+  @include mobile {
+    flex-direction: column;
+    height: auto;
+    max-width: 90%;
+    bottom: 60rem;
+  }
 }
 
 .footer {
@@ -106,5 +112,18 @@
   &-product-item {
     display: block;
     margin-bottom: 1rem;
+  }
+  @include mobile {
+    padding-top: 28rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    flex-direction: column;
+    .footer-product {
+      margin-right: 4rem;
+      margin-top: 2rem;
+    }
+    .footer-right {
+      margin-right: 0;
+    }
   }
 }

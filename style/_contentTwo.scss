@@ -49,4 +49,20 @@
       }
     }
   }
+  @include mobile {
+    flex-direction: column;
+    max-width: 100%;
+    .img-two,
+    img {
+      max-width: 100%;
+    }
+    .content-box {
+      max-width: 90%;
+    }
+    .content-box-title {
+      display: block;
+      margin: 0 auto;
+      font-size: 3rem;
+    }
+  }
 }
